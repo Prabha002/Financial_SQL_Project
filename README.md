@@ -24,7 +24,7 @@ This project demonstrates SQL-based analysis of financial data. Using SQL querie
 
 
 # Project Structure
-**1. Database Setup**
+**1. Database Setup:**
 
 - The project starts by creating a database named mydatabase.
 
@@ -122,7 +122,7 @@ SELECT SUM(sales) AS total_sales FROM financial;
 ```
 
 **4. Sales Performance Analysis:**
-- This section analyzes sales metrics across various dimensions, including total sales per segment, country performance, and product gross sales, it provides insights into sales trends.
+This section analyzes sales metrics across various dimensions, including total sales per segment, country performance, and product gross sales, it provides insights into sales trends.
 ```sql
 --Sales Performance Analysis
 --Total sales amount per segment
@@ -150,7 +150,7 @@ GROUP BY product;
 ```
 
 **5. Profit Analysis:**
-- This section evaluates profitability by calculating total profit for each segment and product, and examining the relationship between manufacturing prices and profits.
+This section evaluates profitability by calculating total profit for each segment and product, and examining the relationship between manufacturing prices and profits.
 ```sql
 --Profit Analysis
 --Total profit for each segment
@@ -177,7 +177,7 @@ GROUP BY segment;
 ```
 
 **6. Discount Impact Analysis:**
-- This section shows the effects of discounts on sales performance, including the count of products with no discounts, average discounts by band, and total units sold.
+This section shows the effects of discounts on sales performance, including the count of products with no discounts, average discounts by band, and total units sold.
 
 ```sql
 --Discount Impact Analysis
@@ -197,7 +197,7 @@ GROUP BY 1;
 ```
 
 **7. Time Based Analysis:**
-- This section explores sales trends over time, analyzing total sales by month, year-over-year changes, and identifying peak and low sales periods.
+This section explores sales trends over time, analyzing total sales by month, year-over-year changes, and identifying peak and low sales periods.
 ```sql
 --Time-Based Analysis
 --Total sales by month
@@ -236,7 +236,7 @@ group by months;
 ```
 
 **8. Cost Analysis:**
-- This section assesses the Cost of Goods Sold (COGS) across products and segments, calculating averages and totals. 
+This section assesses the Cost of Goods Sold (COGS) across products and segments, calculating averages and totals. 
 
 ```sql
 --Cost Analysis
