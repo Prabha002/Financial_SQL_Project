@@ -1,4 +1,4 @@
-# Financial_SQL_Project
+# Financial SQL Project
 # Project Overview
 **Project title:** Financial Samole Sales Analysis
 **Level:** Beginner
@@ -26,10 +26,9 @@ This project demonstrates SQL-based analysis of financial data. Using SQL querie
 # Project Structure
 **1. Database Setup**
 
-**Database Creation:** The project starts by creating a database named mydatabase.
+- The project starts by creating a database named mydatabase.
 
-**Table Creation:** A table named financial is created to store the sales data. The table structure includes columns for 
-IDs, Segment,	Country, Product, Discount band, Units sold, Manufacturing price, Sales price, Gross sales, Discounts, 	  Sales, COGS(Cost Of Goods Sold), Profit, Dates,	Months and years.
+- A table named financial is created to store the sales data. The table structure includes columns for IDs, Segment,	Country, Product, Discount band, Units sold, Manufacturing price, Sales price, Gross sales, Discounts, Sales, COGS(Cost Of Goods Sold), Profit, Dates,	Months and years.
 
 ``` sql
 --Creating database
@@ -95,8 +94,9 @@ OR years IS NULL;
 
 **3. Exploratory Data Analysis (EDA):**
 
-Counting total records, unique segments, products, discount bands, and countries to provide an overview of the dataset.
-Analyzing total units sold and overall sales to gauge business performance.
+- Counting total records, unique segments, products, discount bands, and countries to provide an overview of the dataset.
+  
+- Analyzing total units sold and overall sales to gauge business performance.
 ```sql
 --Exploratory Data Analysis
 --Counting total number of records
@@ -122,7 +122,7 @@ SELECT SUM(sales) AS total_sales FROM financial;
 ```
 
 **4. Sales Performance Analysis:**
-This section analyzes sales metrics across various dimensions, including total sales per segment, country performance, and product gross sales. It provides insights into sales trends and averages to inform strategic decision-making.
+- This section analyzes sales metrics across various dimensions, including total sales per segment, country performance, and product gross sales, it provides insights into sales trends.
 ```sql
 --Sales Performance Analysis
 --Total sales amount per segment
@@ -150,7 +150,7 @@ GROUP BY product;
 ```
 
 **5. Profit Analysis:**
-This section evaluates profitability by calculating total profit for each segment and product, and examining the relationship between manufacturing prices and profits. It provides insights into profit margins and highlights key profit-generating products.
+- This section evaluates profitability by calculating total profit for each segment and product, and examining the relationship between manufacturing prices and profits.
 ```sql
 --Profit Analysis
 --Total profit for each segment
@@ -177,7 +177,7 @@ GROUP BY segment;
 ```
 
 **6. Discount Impact Analysis:**
-This section shows the effects of discounts on sales performance, including the count of products with no discounts, average discounts by band, and total units sold. It provides insights into how discount strategies influence sales outcomes.
+- This section shows the effects of discounts on sales performance, including the count of products with no discounts, average discounts by band, and total units sold.
 
 ```sql
 --Discount Impact Analysis
@@ -197,7 +197,7 @@ GROUP BY 1;
 ```
 
 **7. Time Based Analysis:**
-This section explores sales trends over time, analyzing total sales by month, year-over-year changes, and identifying peak and low sales periods. It offers valuable insights into seasonal patterns and overall sales growth.
+- This section explores sales trends over time, analyzing total sales by month, year-over-year changes, and identifying peak and low sales periods.
 ```sql
 --Time-Based Analysis
 --Total sales by month
@@ -236,7 +236,7 @@ group by months;
 ```
 
 **8. Cost Analysis:**
-This section assesses the Cost of Goods Sold (COGS) across products and segments, calculating averages and totals. It provides insights into cost structures and their impact on overall profitability.
+- This section assesses the Cost of Goods Sold (COGS) across products and segments, calculating averages and totals. 
 
 ```sql
 --Cost Analysis
