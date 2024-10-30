@@ -12,7 +12,10 @@ This project demonstrates SQL-based analysis of financial data. Using SQL querie
 **4. Sales Performance Analysis:** Evaluating total sales per segment, identifying the product with the highest gross sales, and analyzing sales variations by country.
 
 # Project Structure
-ids	segment	country	 product 	 discount_band 	units_sold	  manufacturing_price  	 sale_price 	 gross_sales 	 discounts 	  sales 	cogs	 profit 	dates	months	years
+**1. Database Setup
+Database Creation:** The project starts by creating a database named mydatabase.
+**Table Creation:** A table named financial is created to store the sales data. The table structure includes columns for 
+IDs, Segment,	Country, Product, Discount band, Units sold, Manufacturing price, Sales price, Gross sales, Discounts, 	  Sales, COGS(Cost Of Goods Sold), Profit, Dates,	Months and years.
 
 
 
