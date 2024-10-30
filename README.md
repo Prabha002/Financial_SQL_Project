@@ -112,7 +112,7 @@ SELECT sum(units_sold) AS total_unitssold FROM financial;
 SELECT SUM(sales) AS total_sales FROM financial;
 ```
 
-# Sales Performance Analysis
+**4. Sales Performance Analysis:**
 This section analyzes sales metrics across various dimensions, including total sales per segment, country performance, and product gross sales. It provides insights into sales trends and averages to inform strategic decision-making.
 ```sql
 --Sales Performance Analysis
@@ -140,7 +140,7 @@ SELECT product,round(AVG(sale_price),2)AS average_saleprice FROM financial
 GROUP BY product;
 ```
 
-# Profit Analysis
+**5. Profit Analysis:**
 This section evaluates profitability by calculating total profit for each segment and product, and examining the relationship between manufacturing prices and profits. It provides insights into profit margins and highlights key profit-generating products.
 ```sql
 --Profit Analysis
@@ -167,7 +167,7 @@ FROM financial
 GROUP BY segment;
 ```
 
-# Discount Impact Analysis
+**6. Discount Impact Analysis:**
 This section shows the effects of discounts on sales performance, including the count of products with no discounts, average discounts by band, and total units sold. It provides insights into how discount strategies influence sales outcomes.
 
 ```sql
@@ -187,7 +187,7 @@ FROM financial
 GROUP BY 1;
 ```
 
-# Time Based Analysis
+**7. Time Based Analysis:**
 This section explores sales trends over time, analyzing total sales by month, year-over-year changes, and identifying peak and low sales periods. It offers valuable insights into seasonal patterns and overall sales growth.
 ```sql
 --Time-Based Analysis
@@ -226,7 +226,7 @@ from financial
 group by months;
 ```
 
-# Cost Analysis
+**8. Cost Analysis:**
 This section assesses the Cost of Goods Sold (COGS) across products and segments, calculating averages and totals. It provides insights into cost structures and their impact on overall profitability.
 
 ```sql
