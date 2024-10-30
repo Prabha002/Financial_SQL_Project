@@ -1,5 +1,5 @@
 # Financial_SQL_Project
-# Project Overview\
+# Project Overview
 **Project title:** Financial Samole Sales Analysis
 **Level:** Beginner
 **Database:** mydatabase
