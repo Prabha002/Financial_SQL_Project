@@ -22,5 +22,30 @@ This project demonstrates SQL-based analysis of financial data. Using SQL querie
 **Table Creation:** A table named financial is created to store the sales data. The table structure includes columns for 
 IDs, Segment,	Country, Product, Discount band, Units sold, Manufacturing price, Sales price, Gross sales, Discounts, 	  Sales, COGS(Cost Of Goods Sold), Profit, Dates,	Months and years.
 
+``` sql
+--Creating database
+create database mydatabase;
+
+--Creating table
+create table financial(
+ids INT primary key,
+segment VARCHAR(20),
+country VARCHAR(30),
+product VARCHAR(20),
+discount_band VARCHAR(10),
+units_sold INT,
+manufacturing_price INT,
+sale_price INT,
+gross_sales FLOAT,
+discounts FLOAT,
+sales FLOAT,
+cogs INT,
+profit FLOAT,
+dates DATE,
+months VARCHAR(20),
+years INT
+);
+```
+
 
 
