@@ -6,7 +6,7 @@
 This project demonstrates SQL-based analysis of financial data. Using SQL queries, it explores revenue, customer behaviour, sales trends, and transactional insights to support data-driven decision-making. 
 
 # Objectives
-**1. Set up a financial sales database:** Create and populate a retail sales database with the provided sales data.
+**1. Database Setup:** Create and populate a sales database with the provided financial sales data.
 
 **2. Data Cleaning:** Identify and remove any records with missing or null values.
 
@@ -14,14 +14,21 @@ This project demonstrates SQL-based analysis of financial data. Using SQL querie
 
 **4. Sales Performance Analysis:** Evaluating total sales per segment, identifying the product with the highest gross sales, and analyzing sales variations by country.
 
-**5. Profit Analysis:**
+**5. Profit Analysis:** Assess total profit by segment and product, explore the relationship between manufacturing prices and profits, and evaluate overall profit margins.
+
+**6. Discount Impact Analysis:** Examine the effects of discounts on sales, including the count of products with no discounts and the average discount across different discount bands.
+
+**7. Time Based Analysis:** Analyze sales trends over time, including total sales by month and year, and identify periods of peak and low sales activity.
+
+**8. Cost Analysis:** Identify the Cost of Goods Sold (COGS) per product and segment to understand cost structures and their impact on profitability.
+
 
 # Project Structure
 **1. Database Setup**
 
--**Database Creation:** The project starts by creating a database named mydatabase.
+**Database Creation:** The project starts by creating a database named mydatabase.
 
--**Table Creation:** A table named financial is created to store the sales data. The table structure includes columns for 
+**Table Creation:** A table named financial is created to store the sales data. The table structure includes columns for 
 IDs, Segment,	Country, Product, Discount band, Units sold, Manufacturing price, Sales price, Gross sales, Discounts, 	  Sales, COGS(Cost Of Goods Sold), Profit, Dates,	Months and years.
 
 ``` sql
@@ -55,7 +62,7 @@ SELECT * FROM financial;
 **2. Data Cleaning:**
 - Identify unique records, which will eventually be marked as distinct so that their quality is improved.
 
--Replace and update months column as integer values coming from the sales_date column and detect missing values in each field to retain the integrity.
+- Replace and update months column as integer values coming from the sales_date column and detect missing values in each field to retain the integrity.
 ``` sql
 --Data Cleaning
 -- Viewing distinct records
