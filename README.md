@@ -14,6 +14,8 @@ This project demonstrates SQL-based analysis of financial data. Using SQL querie
 
 **4. Sales Performance Analysis:** Evaluating total sales per segment, identifying the product with the highest gross sales, and analyzing sales variations by country.
 
+**5. Profit Analysis:**
+
 # Project Structure
 **1. Database Setup**
 
